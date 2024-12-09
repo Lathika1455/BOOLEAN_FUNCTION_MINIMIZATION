@@ -24,7 +24,8 @@ variables, and terms needed to represent the function, which is important for ha
 design and optimization in digital circuits.
 
 **Logic Diagram**
-![Screenshot (52)](https://github.com/user-attachments/assets/af22c520-cd1e-4b3e-adab-bb3c6dbe3dfd)
+![Screenshot 2024-12-09 094305](https://github.com/user-attachments/assets/03834164-da83-4430-bcfe-2802210b33fe)
+
 
 **Procedure**
 
@@ -41,7 +42,17 @@ design and optimization in digital circuits.
 
 **Program:**
 
-![Screenshot (51)](https://github.com/user-attachments/assets/c16ee7d6-925b-4ed8-a6d0-49a0932d1c64)
+ module exp2(a,b,c,d,w,x,y,z,f1,f2);
+ 
+ input a,b,c,d,w,x,y,z;
+ 
+ output f1,f2;
+ 
+ assign f1=((~b&~d)|(~a&b&d)|(a&b&~c));
+ 
+ assign f2=((~y&z)|(x&y)|(w&y));
+ 
+ endmodule
 
 
 Developed by:Lathika Sree R RegisterNumber: 24009760
@@ -50,12 +61,15 @@ Developed by:Lathika Sree R RegisterNumber: 24009760
 **RTL realization**
 **Output:**
 **RTL**
-![Screenshot (53)](https://github.com/user-attachments/assets/c90ff749-d898-4929-bfc5-27d23a841fc8)
+
+
+![Screenshot 2024-12-09 094305](https://github.com/user-attachments/assets/ef34efde-2f49-4c22-8d9b-a4e937f58f3b)
 
 
 **Timing Diagram**
 
-![Screenshot (53)](https://github.com/user-attachments/assets/30fda595-d61e-4a86-be79-2377073c0096)
+
+![Screenshot 2024-12-09 094358](https://github.com/user-attachments/assets/b48924ab-4929-4e34-85b1-ef9c5278f026)
 
 
 **Result:**
